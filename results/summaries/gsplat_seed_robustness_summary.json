@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "method": "gsplat_rgb_optimization_baseline",
+  "protocol": {
+    "scenes": ["chair", "drums", "hotdog", "mic"],
+    "seeds": [17, 31, 47],
+    "new_seed_runs": 8,
+    "train_frames": 50,
+    "heldout_frames": 20,
+    "steps": 1000,
+    "gaussians": 2000,
+    "resolution": 128,
+    "test_rgb_and_depth_used_for_optimization": false
+  },
+  "new_seeds_aggregate": {
+    "runs": 8,
+    "psnr_mean_db": 25.82302794340945,
+    "psnr_std_db": 2.9954313350823765,
+    "ssim_mean": 0.8522674426436424,
+    "ssim_std": 0.05054851780448594
+  },
+  "by_run": {
+    "chair_seed17": {"psnr_db": 24.288372573627424, "ssim": 0.8510975211858749},
+    "chair_seed47": {"psnr_db": 23.75766424190363, "ssim": 0.8505499720573425},
+    "drums_seed17": {"psnr_db": 21.852355539860813, "ssim": 0.7667825758457184},
+    "drums_seed47": {"psnr_db": 22.434164637805644, "ssim": 0.777789968252182},
+    "hotdog_seed17": {"psnr_db": 27.09486622162957, "ssim": 0.8765936225652695},
+    "hotdog_seed47": {"psnr_db": 27.29720427119296, "ssim": 0.8792962580919266},
+    "mic_seed17": {"psnr_db": 29.489654104285364, "ssim": 0.9032984584569931},
+    "mic_seed47": {"psnr_db": 30.369941956970184, "ssim": 0.9127311646938324}
+  },
+  "interpretation": "The public gsplat RGB reference is reproducible across seeds, while scene variation remains material. This supports pipeline stability, not a claim of geometric or SOTA superiority."
+}

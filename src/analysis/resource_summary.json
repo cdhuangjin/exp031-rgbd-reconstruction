@@ -1,0 +1,28 @@
+{
+  "main_cuda_heldout": {
+    "files": 3,
+    "rows": 75,
+    "mean_wall_time_seconds": 0.227991,
+    "max_wall_time_seconds": 0.565061
+  },
+  "open3d_tsdf_cpu": {
+    "files": 3,
+    "rows": 15,
+    "mean_wall_time_seconds": 12.40797,
+    "max_wall_time_seconds": 21.213231
+  },
+  "extended_cuda_heldout": {
+    "files": 3,
+    "rows": 75,
+    "mean_wall_time_seconds": 0.929996,
+    "max_wall_time_seconds": 2.076601
+  },
+  "sparse_tsdf_cuda": {
+    "files": 3,
+    "rows": 15,
+    "mean_wall_time_seconds": 12.700089,
+    "max_wall_time_seconds": 21.097669
+  },
+  "source": "LOCAL_EXPERIMENT_ROOT/runs/resource_summary.json"
+}
+

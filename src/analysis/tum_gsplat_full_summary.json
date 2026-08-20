@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "method": "tum_gsplat_vanilla_sh3_default_strategy",
+  "protocol": {
+    "train_frames": 50,
+    "eval_frames": 20,
+    "width": 160,
+    "height": 120,
+    "initial_gaussians": 2000,
+    "steps": 1000,
+    "seed": 31,
+    "sh_degree": 3,
+    "densification": "DefaultStrategy",
+    "device": "cuda",
+    "train_depth_used_for_initialization": true,
+    "test_rgb_and_depth_used_for_optimization": false
+  },
+  "sequences": {
+    "freiburg1_room": {"eval_frames": 19, "psnr_mean_db": 13.308186631124606, "ssim_mean": 0.3612697322509791, "depth_rmse_mean_m": 0.6700557548748819, "depth_coverage_mean": 0.754632692588003, "final_gaussians": 113158},
+    "freiburg2_xyz": {"eval_frames": 19, "psnr_mean_db": 20.229445288376397, "ssim_mean": 0.7099202651726572, "depth_rmse_mean_m": 0.7285310265265013, "depth_coverage_mean": 0.6906113059897172, "final_gaussians": 27040},
+    "freiburg3_long_office_household": {"eval_frames": 19, "psnr_mean_db": 18.58059274615612, "ssim_mean": 0.5908635493956114, "depth_rmse_mean_m": 0.5722417156947287, "depth_coverage_mean": 0.811713275156523, "final_gaussians": 40289},
+    "freiburg1_desk": {"eval_frames": 18, "psnr_mean_db": 18.74013760430784, "ssim_mean": 0.6076769365204705, "depth_rmse_mean_m": 0.3264043931331899, "depth_coverage_mean": 0.7418808043003082, "final_gaussians": 44547},
+    "freiburg1_desk2": {"eval_frames": 18, "psnr_mean_db": 18.617032031028682, "ssim_mean": 0.5901664346456528, "depth_rmse_mean_m": 0.344844914558861, "depth_coverage_mean": 0.749007546239429, "final_gaussians": 59548}
+  },
+  "aggregate": {
+    "psnr_mean_db": 17.89507886019873,
+    "ssim_mean": 0.5719793835970741,
+    "depth_rmse_mean_m": 0.5284155609576325,
+    "depth_coverage_mean": 0.7495691248547961,
+    "final_gaussians_mean": 56916.4
+  },
+  "smoke": {
+    "status": "PASS",
+    "initial_gaussians": 500,
+    "final_gaussians": 590,
+    "steps": 100,
+    "device": "cuda"
+  },
+  "interpretation": "This is a full SH3 plus DefaultStrategy reference using the public gsplat API. It is a stronger reference than the simplified RGB-only run, but it is not a claim of universal superiority: relative to the fusion method's same50 target results, it is lower RMSE on long-office and higher on room/xyz under non-identical held-out frame counts."
+}

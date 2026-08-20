@@ -1,0 +1,304 @@
+{
+  "status": "PASS_WITH_DOMAIN_FAILURES",
+  "rows": 40,
+  "expected_rows": 40,
+  "scenes": [
+    "chair",
+    "drums",
+    "ficus",
+    "hotdog",
+    "lego",
+    "materials",
+    "mic",
+    "ship"
+  ],
+  "aggregate": {
+    "baseline": {
+      "finite_scenes": 8,
+      "mean_rmse": 0.5202916476121688,
+      "mean_delta_vs_baseline": 0.0
+    },
+    "m1": {
+      "finite_scenes": 8,
+      "mean_rmse": 0.5202916476121688,
+      "mean_delta_vs_baseline": 0.0
+    },
+    "m2": {
+      "finite_scenes": 8,
+      "mean_rmse": 0.5202917499277845,
+      "mean_delta_vs_baseline": 1.0231561566736991e-07
+    },
+    "m3": {
+      "finite_scenes": 6,
+      "mean_rmse": 0.4398961392508072,
+      "mean_delta_vs_baseline": 0.0022135376845172825
+    },
+    "full": {
+      "finite_scenes": 6,
+      "mean_rmse": 0.4398852984162706,
+      "mean_delta_vs_baseline": 0.0022026968499806823
+    }
+  },
+  "by_scene": {
+    "chair": {
+      "baseline": {
+        "rmse": 0.5095691487766999,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.001623828125,
+        "finite": true
+      },
+      "m1": {
+        "rmse": 0.5095691487766999,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.001623828125,
+        "finite": true
+      },
+      "m2": {
+        "rmse": 0.5095333487887849,
+        "delta_vs_baseline": -3.5799987915030584e-05,
+        "coverage": 0.0016234375,
+        "finite": true
+      },
+      "m3": {
+        "rmse": 0.5257165843300712,
+        "delta_vs_baseline": 0.01614743555337128,
+        "coverage": 0.0012292968750000001,
+        "finite": true
+      },
+      "full": {
+        "rmse": 0.5257138632090934,
+        "delta_vs_baseline": 0.016144714432393514,
+        "coverage": 0.0012291666666666666,
+        "finite": true
+      }
+    },
+    "drums": {
+      "baseline": {
+        "rmse": 0.43199043986763885,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.0021345052083333333,
+        "finite": true
+      },
+      "m1": {
+        "rmse": 0.43199043986763885,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.0021345052083333333,
+        "finite": true
+      },
+      "m2": {
+        "rmse": 0.4317400563214635,
+        "delta_vs_baseline": -0.00025038354617534786,
+        "coverage": 0.0021341145833333333,
+        "finite": true
+      },
+      "m3": {
+        "rmse": 0.43199043986763885,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.0021345052083333333,
+        "finite": true
+      },
+      "full": {
+        "rmse": 0.4317400563214635,
+        "delta_vs_baseline": -0.00025038354617534786,
+        "coverage": 0.0021341145833333333,
+        "finite": true
+      }
+    },
+    "ficus": {
+      "baseline": {
+        "rmse": 0.722557300849277,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.001158984375,
+        "finite": true
+      },
+      "m1": {
+        "rmse": 0.722557300849277,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.001158984375,
+        "finite": true
+      },
+      "m2": {
+        "rmse": 0.7225077241572415,
+        "delta_vs_baseline": -4.957669203553561e-05,
+        "coverage": 0.0011591145833333334,
+        "finite": true
+      },
+      "m3": {
+        "rmse": NaN,
+        "delta_vs_baseline": null,
+        "coverage": null,
+        "finite": false
+      },
+      "full": {
+        "rmse": NaN,
+        "delta_vs_baseline": null,
+        "coverage": null,
+        "finite": false
+      }
+    },
+    "hotdog": {
+      "baseline": {
+        "rmse": 0.24348533035968303,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.006461328125000001,
+        "finite": true
+      },
+      "m1": {
+        "rmse": 0.24348533035968303,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.006461328125000001,
+        "finite": true
+      },
+      "m2": {
+        "rmse": 0.2434670490562125,
+        "delta_vs_baseline": -1.828130347053536e-05,
+        "coverage": 0.006460807291666666,
+        "finite": true
+      },
+      "m3": {
+        "rmse": 0.24061912091341545,
+        "delta_vs_baseline": -0.002866209446267587,
+        "coverage": 0.006543465909090911,
+        "finite": true
+      },
+      "full": {
+        "rmse": 0.240605186159667,
+        "delta_vs_baseline": -0.0028801442000160327,
+        "coverage": 0.006542897727272728,
+        "finite": true
+      }
+    },
+    "lego": {
+      "baseline": {
+        "rmse": 0.5402047458063673,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.005216276041666666,
+        "finite": true
+      },
+      "m1": {
+        "rmse": 0.5402047458063673,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.005216276041666666,
+        "finite": true
+      },
+      "m2": {
+        "rmse": 0.5404040828555818,
+        "delta_vs_baseline": 0.00019933704921448747,
+        "coverage": 0.005215755208333333,
+        "finite": true
+      },
+      "m3": {
+        "rmse": 0.5402047458063673,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.005216276041666666,
+        "finite": true
+      },
+      "full": {
+        "rmse": 0.5404040828555818,
+        "delta_vs_baseline": 0.00019933704921448747,
+        "coverage": 0.005215755208333333,
+        "finite": true
+      }
+    },
+    "materials": {
+      "baseline": {
+        "rmse": 0.480155215740476,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.004098046875,
+        "finite": true
+      },
+      "m1": {
+        "rmse": 0.480155215740476,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.004098046875,
+        "finite": true
+      },
+      "m2": {
+        "rmse": 0.4801451799851238,
+        "delta_vs_baseline": -1.0035755352189035e-05,
+        "coverage": 0.004099348958333333,
+        "finite": true
+      },
+      "m3": {
+        "rmse": 0.480155215740476,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.004098046875,
+        "finite": true
+      },
+      "full": {
+        "rmse": 0.4801451799851238,
+        "delta_vs_baseline": -1.0035755352189035e-05,
+        "coverage": 0.004099348958333333,
+        "finite": true
+      }
+    },
+    "mic": {
+      "baseline": {
+        "rmse": 0.8136802706503339,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.0008803385416666667,
+        "finite": true
+      },
+      "m1": {
+        "rmse": 0.8136802706503339,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.0008803385416666667,
+        "finite": true
+      },
+      "m2": {
+        "rmse": 0.8138331362911737,
+        "delta_vs_baseline": 0.00015286564083982768,
+        "coverage": 0.000880859375,
+        "finite": true
+      },
+      "m3": {
+        "rmse": NaN,
+        "delta_vs_baseline": null,
+        "coverage": null,
+        "finite": false
+      },
+      "full": {
+        "rmse": NaN,
+        "delta_vs_baseline": null,
+        "coverage": null,
+        "finite": false
+      }
+    },
+    "ship": {
+      "baseline": {
+        "rmse": 0.4206907288468744,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.011144140625,
+        "finite": true
+      },
+      "m1": {
+        "rmse": 0.4206907288468744,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.011144140625,
+        "finite": true
+      },
+      "m2": {
+        "rmse": 0.4207034219666941,
+        "delta_vs_baseline": 1.2693119819662257e-05,
+        "coverage": 0.011143880208333332,
+        "finite": true
+      },
+      "m3": {
+        "rmse": 0.4206907288468744,
+        "delta_vs_baseline": 0.0,
+        "coverage": 0.011144140625,
+        "finite": true
+      },
+      "full": {
+        "rmse": 0.4207034219666941,
+        "delta_vs_baseline": 1.2693119819662257e-05,
+        "coverage": 0.011143880208333332,
+        "finite": true
+      }
+    }
+  },
+  "domain_failure_scenes": [
+    "ficus",
+    "mic"
+  ]
+}

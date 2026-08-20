@@ -1,0 +1,21 @@
+# Raw and extracted datasets
+data/
+datasets/
+*.tgz
+*.tar.gz
+*.zip
+
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Local experiment logs and generated build files
+*.log
+*.aux
+*.bbl
+*.blg
+*.out

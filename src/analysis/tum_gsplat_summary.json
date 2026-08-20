@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "method": "tum_gsplat_rgb_only_with_train_rgbd_init",
+  "protocol": {
+    "sequences": 5,
+    "train_frames": 50,
+    "heldout_frames_requested": 20,
+    "width": 160,
+    "height": 120,
+    "gaussians": 2000,
+    "steps": 1000,
+    "seed": 31,
+    "train_depth_used_for_initialization": true,
+    "optimization_loss": "RGB-only",
+    "heldout_rgb_and_depth_used_for_optimization": false,
+    "device": "cuda"
+  },
+  "results": {
+    "freiburg1_room": {"matched_frames": 1362, "eval_frames": 19, "psnr_db": 13.515, "ssim": 0.493, "depth_rmse_m": 0.531, "depth_coverage": 0.755, "full_rmse_m": 0.561131912053492, "gsplat_minus_full_rmse_m": -0.0306},
+    "freiburg2_xyz": {"matched_frames": 3669, "eval_frames": 19, "psnr_db": 16.898, "ssim": 0.592, "depth_rmse_m": 0.700, "depth_coverage": 0.691, "full_rmse_m": 0.4728471854776411, "gsplat_minus_full_rmse_m": 0.2272},
+    "freiburg3_long_office_household": {"matched_frames": 2493, "eval_frames": 19, "psnr_db": 15.862, "ssim": 0.565, "depth_rmse_m": 0.578, "depth_coverage": 0.812, "full_rmse_m": 0.6625891146438787, "gsplat_minus_full_rmse_m": -0.0846},
+    "freiburg1_desk": {"matched_frames": 596, "eval_frames": 18, "psnr_db": 13.909, "ssim": 0.492, "depth_rmse_m": 0.351, "depth_coverage": 0.742},
+    "freiburg1_desk2": {"matched_frames": 636, "eval_frames": 18, "psnr_db": 14.604, "ssim": 0.512, "depth_rmse_m": 0.351, "depth_coverage": 0.749}
+  },
+  "interpretation": "The same-protocol reference is reproducible and competitive on two target sequences but loses on freiburg2_xyz. It is a transparent RGB-only gsplat reference with training RGB-D initialization, not a full SOTA 3DGS implementation."
+}

@@ -1,0 +1,15 @@
+{
+  "source": [
+    "LOCAL_EXPERIMENT_ROOT/runs/extended_cuda_s20_m48.json",
+    "LOCAL_EXPERIMENT_ROOT/runs/extended_cuda_s30_m48.json",
+    "LOCAL_EXPERIMENT_ROOT/runs/extended_cuda_s40_m48.json"
+  ],
+  "protocol": "max_frames=48, stride=20/30/40, 3/4 build and 1/4 held-out, CUDA",
+  "audit": "PASS",
+  "target_comparisons": {
+    "fr1/room": {"baseline_rmse": 0.7285, "full_rmse": 0.5611, "delta": -0.1674, "baseline_coverage": 0.0384, "full_coverage": 0.0250, "coverage_adjusted_delta_penalty_1m": -0.1540, "improved_windows": "3/3", "heldout_frames_mean": 11},
+    "fr2/xyz": {"baseline_rmse": 1.3482, "full_rmse": 0.4728, "delta": -0.8754, "baseline_coverage": 0.0867, "full_coverage": 0.0243, "coverage_adjusted_delta_penalty_1m": -0.8129, "improved_windows": "3/3", "heldout_frames_mean": 12},
+    "fr3/long-office": {"baseline_rmse": 1.2375, "full_rmse": 0.6626, "delta": -0.5749, "baseline_coverage": 0.1595, "full_coverage": 0.0751, "coverage_adjusted_delta_penalty_1m": -0.4905, "improved_windows": "3/3", "heldout_frames_mean": 12}
+  }
+}
+

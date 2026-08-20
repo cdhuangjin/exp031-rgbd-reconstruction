@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "method": "gsplat_rgb_optimization_baseline",
+  "protocol": {
+    "scenes": 8,
+    "train_frames": 50,
+    "heldout_frames": 20,
+    "steps": 1000,
+    "gaussians": 2000,
+    "resolution": 128,
+    "seed": 31,
+    "test_rgb_and_depth_used_for_optimization": false,
+    "device": "cuda",
+    "torch": "2.8.0+cu128",
+    "gsplat": "1.4.0",
+    "cuda_arch": "8.6"
+  },
+  "aggregate": {
+    "psnr_mean_db": 25.298357122893833,
+    "psnr_std_db": 1.9837457805057108,
+    "ssim_mean": 0.8239719767123461,
+    "ssim_std": 0.04906258656594229,
+    "depth_rmse_mean_m": 1.7874672926962376,
+    "depth_rmse_std_m": 0.07553817676852402,
+    "depth_coverage_mean": 0.2416656494140625,
+    "depth_coverage_std": 0.10863602918844774
+  },
+  "by_scene": {
+    "chair": {"psnr_db": 24.151, "ssim": 0.852, "depth_rmse_m": 1.7486, "depth_coverage": 0.192},
+    "drums": {"psnr_db": 22.741, "ssim": 0.786, "depth_rmse_m": 1.7523, "depth_coverage": 0.215},
+    "ficus": {"psnr_db": 25.010, "ssim": 0.843, "depth_rmse_m": 1.8173, "depth_coverage": 0.109},
+    "hotdog": {"psnr_db": 26.938, "ssim": 0.880, "depth_rmse_m": 1.7113, "depth_coverage": 0.295},
+    "lego": {"psnr_db": 24.337, "ssim": 0.790, "depth_rmse_m": 1.7161, "depth_coverage": 0.305},
+    "materials": {"psnr_db": 24.176, "ssim": 0.776, "depth_rmse_m": 1.7849, "depth_coverage": 0.262},
+    "mic": {"psnr_db": 29.081, "ssim": 0.894, "depth_rmse_m": 1.8275, "depth_coverage": 0.116},
+    "ship": {"psnr_db": 25.953, "ssim": 0.771, "depth_rmse_m": 1.9418, "depth_coverage": 0.439}
+  },
+  "interpretation": "RGB reconstruction is stable across all eight synthetic scenes; depth rendering has low coverage and is retained as a diagnostic rather than a claim of geometric superiority."
+}

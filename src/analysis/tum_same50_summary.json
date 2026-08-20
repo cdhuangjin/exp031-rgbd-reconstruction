@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "protocol": {
+    "max_frames": 50,
+    "stride": 20,
+    "heldout_split": "every fourth sampled frame",
+    "device": "cuda",
+    "threshold_source": "freiburg1_desk+desk2",
+    "threshold": 0.30028971354166667
+  },
+  "target_sequences": {
+    "freiburg1_room": {"frames": 50, "heldout_frames": 13, "baseline_rmse_m": 0.7157811167118864, "full_rmse_m": 0.5049062892839316, "full_minus_baseline_m": -0.2108748274279548, "full_coverage": 0.03539237780448718},
+    "freiburg2_xyz": {"frames": 50, "heldout_frames": 13, "baseline_rmse_m": 1.3483231080308096, "full_rmse_m": 0.45063985235921744, "full_minus_baseline_m": -0.8976832556715922, "full_coverage": 0.02341796875},
+    "freiburg3_long_office_household": {"frames": 50, "heldout_frames": 13, "baseline_rmse_m": 1.2288563640820498, "full_rmse_m": 0.6641993011090054, "full_minus_baseline_m": -0.5646570621230444, "full_coverage": 0.07289863782051281}
+  },
+  "source_sequences": {
+    "freiburg1_desk": {"frames": 32, "heldout_frames": 8, "baseline_rmse_m": 0.8164848118074653, "full_rmse_m": 0.40575753338828024},
+    "freiburg1_desk2": {"frames": 33, "heldout_frames": 9, "baseline_rmse_m": 0.7884593755057584, "full_rmse_m": 0.3886110866987287}
+  },
+  "interpretation": "Under the same 50-frame CUDA protocol, Full improves RMSE on all three target sequences and retains the previously observed coverage trade-off. The threshold is calibrated only from the two source sequences."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS_WITH_DOMAIN_FAILURES",
+  "protocol": {
+    "scenes": 8,
+    "max_frames": 48,
+    "stride": 4,
+    "heldout_rule": "every fourth sampled frame",
+    "quantile": 0.9,
+    "frozen_source_threshold": 0.833346875,
+    "target_threshold_uses_heldout_depth": false
+  },
+  "results": {
+    "chair": {"baseline_rmse_m": 0.5096, "frozen": {"threshold": 0.83335, "heldout_frames": 12, "rmse_m": 0.52571, "coverage": 0.00123}, "target_adaptive": {"threshold": 0.84544, "heldout_frames": 12, "rmse_m": 0.54748, "coverage": 0.0015}},
+    "drums": {"baseline_rmse_m": 0.4320, "frozen": {"threshold": 0.83335, "heldout_frames": 12, "rmse_m": 0.43174, "coverage": 0.00213}, "target_adaptive": {"threshold": 0.81616, "heldout_frames": 12, "rmse_m": 0.41678, "coverage": 0.00201}},
+    "ficus": {"baseline_rmse_m": 0.7226, "frozen": {"threshold": 0.83335, "heldout_frames": 0}, "target_adaptive": {"threshold": 0.89587, "heldout_frames": 12, "rmse_m": 0.72545, "coverage": 0.00093}},
+    "hotdog": {"baseline_rmse_m": 0.2435, "frozen": {"threshold": 0.83335, "heldout_frames": 12, "rmse_m": 0.24061, "coverage": 0.00654}, "target_adaptive": {"threshold": 0.85607, "heldout_frames": 11, "rmse_m": 0.24133, "coverage": 0.0068}},
+    "lego": {"baseline_rmse_m": 0.5402, "frozen": {"threshold": 0.83335, "heldout_frames": 12, "rmse_m": 0.5404, "coverage": 0.00522}, "target_adaptive": {"threshold": 0.74731, "heldout_frames": 12, "rmse_m": 0.77216, "coverage": 0.00484}},
+    "materials": {"baseline_rmse_m": 0.4802, "frozen": {"threshold": 0.83335, "heldout_frames": 12, "rmse_m": 0.48015, "coverage": 0.0041}, "target_adaptive": {"threshold": 0.79885, "heldout_frames": 12, "rmse_m": 0.49435, "coverage": 0.00375}},
+    "mic": {"baseline_rmse_m": 0.8137, "frozen": {"threshold": 0.83335, "heldout_frames": 0}, "target_adaptive": {"threshold": 0.90707, "heldout_frames": 12, "rmse_m": 0.70899, "coverage": 0.00067}},
+    "ship": {"baseline_rmse_m": 0.4207, "frozen": {"threshold": 0.83335, "heldout_frames": 12, "rmse_m": 0.4207, "coverage": 0.01114}, "target_adaptive": {"threshold": 0.67194, "heldout_frames": 12, "rmse_m": 0.45331, "coverage": 0.0101}}
+  },
+  "interpretation": "Target-only calibration removes the zero-frame failure on ficus and mic but does not uniformly improve RMSE relative to the same-scene Baseline. The frozen source threshold is therefore a documented domain limitation, not a hidden evaluation failure."
+}

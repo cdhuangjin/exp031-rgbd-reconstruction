@@ -1,0 +1,779 @@
+{
+  "status": "PASS",
+  "rows": 100,
+  "expected_rows": 100,
+  "levels": [
+    "clean",
+    "mild",
+    "moderate",
+    "severe"
+  ],
+  "scenes": [
+    "freiburg1_desk",
+    "freiburg1_desk2",
+    "freiburg1_room",
+    "freiburg2_xyz",
+    "freiburg3_long_office_household"
+  ],
+  "finite_metrics": true,
+  "aggregate": {
+    "clean": {
+      "baseline": {
+        "mean_rmse": 0.9946745224609016,
+        "std_rmse": 0.25120124962549506,
+        "mean_delta_vs_baseline": 0.0,
+        "improved_scenes": 0,
+        "bootstrap95_ci_delta": [
+          0.0,
+          0.0
+        ]
+      },
+      "m1": {
+        "mean_rmse": 0.5463470218596983,
+        "std_rmse": 0.126231778178743,
+        "mean_delta_vs_baseline": -0.44832750060120335,
+        "improved_scenes": 5,
+        "bootstrap95_ci_delta": [
+          -0.5849064561090069,
+          -0.3218222654274744
+        ]
+      },
+      "m2": {
+        "mean_rmse": 0.9945451610501808,
+        "std_rmse": 0.2517066361038455,
+        "mean_delta_vs_baseline": -0.00012936141072090735,
+        "improved_scenes": 3,
+        "bootstrap95_ci_delta": [
+          -0.0005706947925516737,
+          0.00037164507421589833
+        ]
+      },
+      "m3": {
+        "mean_rmse": 0.4982308590933003,
+        "std_rmse": 0.10051243644852129,
+        "mean_delta_vs_baseline": -0.4964436633676014,
+        "improved_scenes": 5,
+        "bootstrap95_ci_delta": [
+          -0.693933979424736,
+          -0.3200955313333226
+        ]
+      },
+      "full": {
+        "mean_rmse": 0.49826265118332014,
+        "std_rmse": 0.1006579259067383,
+        "mean_delta_vs_baseline": -0.49641187127758146,
+        "improved_scenes": 5,
+        "bootstrap95_ci_delta": [
+          -0.7032102776435398,
+          -0.31965498906249806
+        ]
+      }
+    },
+    "mild": {
+      "baseline": {
+        "mean_rmse": 0.97073482258567,
+        "std_rmse": 0.23838635583714826,
+        "mean_delta_vs_baseline": 0.0,
+        "improved_scenes": 0,
+        "bootstrap95_ci_delta": [
+          0.0,
+          0.0
+        ]
+      },
+      "m1": {
+        "mean_rmse": 0.5693959253557347,
+        "std_rmse": 0.16058342703128006,
+        "mean_delta_vs_baseline": -0.4013388972299352,
+        "improved_scenes": 5,
+        "bootstrap95_ci_delta": [
+          -0.5006769239676886,
+          -0.30036513437319357
+        ]
+      },
+      "m2": {
+        "mean_rmse": 0.9704328263195373,
+        "std_rmse": 0.23871508566910968,
+        "mean_delta_vs_baseline": -0.0003019962661326314,
+        "improved_scenes": 4,
+        "bootstrap95_ci_delta": [
+          -0.0006258724647043801,
+          4.2317489243215434e-05
+        ]
+      },
+      "m3": {
+        "mean_rmse": 0.5347178240574909,
+        "std_rmse": 0.11719924341236246,
+        "mean_delta_vs_baseline": -0.43601699852817905,
+        "improved_scenes": 5,
+        "bootstrap95_ci_delta": [
+          -0.5816335577385323,
+          -0.309265671944764
+        ]
+      },
+      "full": {
+        "mean_rmse": 0.5347736330904694,
+        "std_rmse": 0.11728450592082065,
+        "mean_delta_vs_baseline": -0.4359611894952006,
+        "improved_scenes": 5,
+        "bootstrap95_ci_delta": [
+          -0.5659983134333829,
+          -0.3093123766141929
+        ]
+      }
+    },
+    "moderate": {
+      "baseline": {
+        "mean_rmse": 0.9361593558160248,
+        "std_rmse": 0.23866328524666253,
+        "mean_delta_vs_baseline": 0.0,
+        "improved_scenes": 0,
+        "bootstrap95_ci_delta": [
+          0.0,
+          0.0
+        ]
+      },
+      "m1": {
+        "mean_rmse": 0.6170729469433798,
+        "std_rmse": 0.21109430294601356,
+        "mean_delta_vs_baseline": -0.31908640887264506,
+        "improved_scenes": 5,
+        "bootstrap95_ci_delta": [
+          -0.36605145474493667,
+          -0.25662873291844285
+        ]
+      },
+      "m2": {
+        "mean_rmse": 0.9360000736016285,
+        "std_rmse": 0.23864657910720286,
+        "mean_delta_vs_baseline": -0.00015928221439627245,
+        "improved_scenes": 3,
+        "bootstrap95_ci_delta": [
+          -0.0005304559658969588,
+          0.0001535989349035649
+        ]
+      },
+      "m3": {
+        "mean_rmse": 0.5854779458888508,
+        "std_rmse": 0.16627374400648465,
+        "mean_delta_vs_baseline": -0.35068140992717395,
+        "improved_scenes": 5,
+        "bootstrap95_ci_delta": [
+          -0.4336393786589743,
+          -0.26336567225585394
+        ]
+      },
+      "full": {
+        "mean_rmse": 0.5855466024381377,
+        "std_rmse": 0.16627386493397836,
+        "mean_delta_vs_baseline": -0.350612753377887,
+        "improved_scenes": 5,
+        "bootstrap95_ci_delta": [
+          -0.4335780940020794,
+          -0.2631827956520341
+        ]
+      }
+    },
+    "severe": {
+      "baseline": {
+        "mean_rmse": 0.936438306754708,
+        "std_rmse": 0.2464869053280268,
+        "mean_delta_vs_baseline": 0.0,
+        "improved_scenes": 0,
+        "bootstrap95_ci_delta": [
+          0.0,
+          0.0
+        ]
+      },
+      "m1": {
+        "mean_rmse": 0.6469129097505324,
+        "std_rmse": 0.21325679918485732,
+        "mean_delta_vs_baseline": -0.28952539700417557,
+        "improved_scenes": 5,
+        "bootstrap95_ci_delta": [
+          -0.32938401026796915,
+          -0.23895576134298624
+        ]
+      },
+      "m2": {
+        "mean_rmse": 0.9364715416973942,
+        "std_rmse": 0.2466645301755279,
+        "mean_delta_vs_baseline": 3.3234942686255486e-05,
+        "improved_scenes": 2,
+        "bootstrap95_ci_delta": [
+          -0.00029420189168729574,
+          0.0003606717770598067
+        ]
+      },
+      "m3": {
+        "mean_rmse": 0.6238745661035165,
+        "std_rmse": 0.1829200339022434,
+        "mean_delta_vs_baseline": -0.3125637406511914,
+        "improved_scenes": 5,
+        "bootstrap95_ci_delta": [
+          -0.39800836003217804,
+          -0.23533828302825582
+        ]
+      },
+      "full": {
+        "mean_rmse": 0.6240007968098964,
+        "std_rmse": 0.1830404834580049,
+        "mean_delta_vs_baseline": -0.31243750994481145,
+        "improved_scenes": 5,
+        "bootstrap95_ci_delta": [
+          -0.3979595906305632,
+          -0.23705880680792402
+        ]
+      }
+    }
+  },
+  "by_scene": {
+    "clean": {
+      "freiburg1_desk": {
+        "baseline": {
+          "rmse": 0.8164848118074653,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.047149251302083334
+        },
+        "m1": {
+          "rmse": 0.41173875028579543,
+          "delta_vs_baseline": -0.4047460615216699,
+          "coverage": 0.035001220703125
+        },
+        "m2": {
+          "rmse": 0.8162422542891213,
+          "delta_vs_baseline": -0.00024255751834401096,
+          "coverage": 0.04714436848958334
+        },
+        "m3": {
+          "rmse": 0.40658557419451,
+          "delta_vs_baseline": -0.4098992376129553,
+          "coverage": 0.03334309895833333
+        },
+        "full": {
+          "rmse": 0.40575753338828024,
+          "delta_vs_baseline": -0.4107272784191851,
+          "coverage": 0.033323974609375
+        }
+      },
+      "freiburg1_desk2": {
+        "baseline": {
+          "rmse": 0.7884593755057584,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.04329571759259259
+        },
+        "m1": {
+          "rmse": 0.39457626075085944,
+          "delta_vs_baseline": -0.39388311475489896,
+          "coverage": 0.03048213252314815
+        },
+        "m2": {
+          "rmse": 0.787748685874189,
+          "delta_vs_baseline": -0.0007106896315693945,
+          "coverage": 0.04328993055555555
+        },
+        "m3": {
+          "rmse": 0.38830289796610734,
+          "delta_vs_baseline": -0.40015647753965106,
+          "coverage": 0.027666739004629633
+        },
+        "full": {
+          "rmse": 0.3886110866987287,
+          "delta_vs_baseline": -0.3998482888070297,
+          "coverage": 0.027679036458333334
+        }
+      },
+      "freiburg1_room": {
+        "baseline": {
+          "rmse": 0.7716681969170537,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.042765299479166664
+        },
+        "m1": {
+          "rmse": 0.5609746601281411,
+          "delta_vs_baseline": -0.21069353678891256,
+          "coverage": 0.03166693793402778
+        },
+        "m2": {
+          "rmse": 0.7710734283264159,
+          "delta_vs_baseline": -0.0005947685906377842,
+          "coverage": 0.04271185980902778
+        },
+        "m3": {
+          "rmse": 0.5659436712133116,
+          "delta_vs_baseline": -0.2057245257037421,
+          "coverage": 0.028058268229166666
+        },
+        "full": {
+          "rmse": 0.5665996275948245,
+          "delta_vs_baseline": -0.20506856932222917,
+          "coverage": 0.02804904513888889
+        }
+      },
+      "freiburg2_xyz": {
+        "baseline": {
+          "rmse": 1.3576594751532751,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.0861333550347222
+        },
+        "m1": {
+          "rmse": 0.708492287228475,
+          "delta_vs_baseline": -0.6491671879248001,
+          "coverage": 0.02969509548611111
+        },
+        "m2": {
+          "rmse": 1.3584353677906604,
+          "delta_vs_baseline": 0.0007758926373853114,
+          "coverage": 0.08616861979166668
+        },
+        "m3": {
+          "rmse": 0.47436900118735204,
+          "delta_vs_baseline": -0.8832904739659231,
+          "coverage": 0.024235297309027775
+        },
+        "full": {
+          "rmse": 0.4744652038525847,
+          "delta_vs_baseline": -0.8831942713006904,
+          "coverage": 0.024226888020833337
+        }
+      },
+      "freiburg3_long_office_household": {
+        "baseline": {
+          "rmse": 1.2391007529209557,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.15822048611111114
+        },
+        "m1": {
+          "rmse": 0.6559531509052203,
+          "delta_vs_baseline": -0.5831476020157353,
+          "coverage": 0.07338975694444444
+        },
+        "m2": {
+          "rmse": 1.239226068970517,
+          "delta_vs_baseline": 0.00012531604956134146,
+          "coverage": 0.15828016493055555
+        },
+        "m3": {
+          "rmse": 0.6559531509052203,
+          "delta_vs_baseline": -0.5831476020157353,
+          "coverage": 0.07338975694444444
+        },
+        "full": {
+          "rmse": 0.6558798043821827,
+          "delta_vs_baseline": -0.5832209485387729,
+          "coverage": 0.07340277777777778
+        }
+      }
+    },
+    "mild": {
+      "freiburg1_desk": {
+        "baseline": {
+          "rmse": 0.7958734240860297,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.05286458333333334
+        },
+        "m1": {
+          "rmse": 0.4153432440554824,
+          "delta_vs_baseline": -0.3805301800305473,
+          "coverage": 0.03967488606770833
+        },
+        "m2": {
+          "rmse": 0.7950920438077892,
+          "delta_vs_baseline": -0.0007813802782404844,
+          "coverage": 0.05287027994791667
+        },
+        "m3": {
+          "rmse": 0.4102194224223516,
+          "delta_vs_baseline": -0.3856540016636781,
+          "coverage": 0.037497151692708335
+        },
+        "full": {
+          "rmse": 0.4103025940065662,
+          "delta_vs_baseline": -0.38557083007946347,
+          "coverage": 0.0375341796875
+        }
+      },
+      "freiburg1_desk2": {
+        "baseline": {
+          "rmse": 0.7705696109817155,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.04484230324074074
+        },
+        "m1": {
+          "rmse": 0.39111170699696696,
+          "delta_vs_baseline": -0.37945790398474855,
+          "coverage": 0.0319748263888889
+        },
+        "m2": {
+          "rmse": 0.7699904258495187,
+          "delta_vs_baseline": -0.0005791851321967911,
+          "coverage": 0.04484881365740741
+        },
+        "m3": {
+          "rmse": 0.38502786342320283,
+          "delta_vs_baseline": -0.38554174755851267,
+          "coverage": 0.02895978009259259
+        },
+        "full": {
+          "rmse": 0.3850138272891378,
+          "delta_vs_baseline": -0.3855557836925777,
+          "coverage": 0.02899016203703704
+        }
+      },
+      "freiburg1_room": {
+        "baseline": {
+          "rmse": 0.7703815062928654,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.04702284071180556
+        },
+        "m1": {
+          "rmse": 0.5608671578885347,
+          "delta_vs_baseline": -0.2095143484043307,
+          "coverage": 0.03482177734375
+        },
+        "m2": {
+          "rmse": 0.769973274790218,
+          "delta_vs_baseline": -0.0004082315026473493,
+          "coverage": 0.04701904296875001
+        },
+        "m3": {
+          "rmse": 0.5646124972934256,
+          "delta_vs_baseline": -0.20576900899943984,
+          "coverage": 0.031204427083333333
+        },
+        "full": {
+          "rmse": 0.5642108998256445,
+          "delta_vs_baseline": -0.20617060646722085,
+          "coverage": 0.031197102864583336
+        }
+      },
+      "freiburg2_xyz": {
+        "baseline": {
+          "rmse": 1.3209754509497333,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.10607584635416668
+        },
+        "m1": {
+          "rmse": 0.8271507282815063,
+          "delta_vs_baseline": -0.4938247226682271,
+          "coverage": 0.041087510850694446
+        },
+        "m2": {
+          "rmse": 1.320968288034159,
+          "delta_vs_baseline": -7.162915574232542e-06,
+          "coverage": 0.10607476128472221
+        },
+        "m3": {
+          "rmse": 0.6612225475922912,
+          "delta_vs_baseline": -0.6597529033574422,
+          "coverage": 0.033828667534722225
+        },
+        "full": {
+          "rmse": 0.6609610036897168,
+          "delta_vs_baseline": -0.6600144472600166,
+          "coverage": 0.03382161458333333
+        }
+      },
+      "freiburg3_long_office_household": {
+        "baseline": {
+          "rmse": 1.195874120618006,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.1773483615451389
+        },
+        "m1": {
+          "rmse": 0.6525067895561835,
+          "delta_vs_baseline": -0.5433673310618224,
+          "coverage": 0.08382025824652778
+        },
+        "m2": {
+          "rmse": 1.1961400991160016,
+          "delta_vs_baseline": 0.0002659784979957003,
+          "coverage": 0.17735894097222218
+        },
+        "m3": {
+          "rmse": 0.6525067895561835,
+          "delta_vs_baseline": -0.5433673310618224,
+          "coverage": 0.08382025824652778
+        },
+        "full": {
+          "rmse": 0.6533798406412815,
+          "delta_vs_baseline": -0.5424942799767244,
+          "coverage": 0.08385362413194446
+        }
+      }
+    },
+    "moderate": {
+      "freiburg1_desk": {
+        "baseline": {
+          "rmse": 0.7637853282731362,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.06371826171875
+        },
+        "m1": {
+          "rmse": 0.4337352222828147,
+          "delta_vs_baseline": -0.3300501059903215,
+          "coverage": 0.04963175455729167
+        },
+        "m2": {
+          "rmse": 0.7634865551266485,
+          "delta_vs_baseline": -0.00029877314648762976,
+          "coverage": 0.063724365234375
+        },
+        "m3": {
+          "rmse": 0.42706191739731936,
+          "delta_vs_baseline": -0.3367234108758168,
+          "coverage": 0.0460498046875
+        },
+        "full": {
+          "rmse": 0.42705775487504405,
+          "delta_vs_baseline": -0.3367275733980921,
+          "coverage": 0.04604410807291667
+        }
+      },
+      "freiburg1_desk2": {
+        "baseline": {
+          "rmse": 0.7198325375819603,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.05070638020833333
+        },
+        "m1": {
+          "rmse": 0.39594260960872796,
+          "delta_vs_baseline": -0.32388992797323235,
+          "coverage": 0.038089554398148144
+        },
+        "m2": {
+          "rmse": 0.7198181268637178,
+          "delta_vs_baseline": -1.4410718242485743e-05,
+          "coverage": 0.05069480613425926
+        },
+        "m3": {
+          "rmse": 0.39064864976781466,
+          "delta_vs_baseline": -0.32918388781414565,
+          "coverage": 0.03420826099537037
+        },
+        "full": {
+          "rmse": 0.3906631935594256,
+          "delta_vs_baseline": -0.3291693440225347,
+          "coverage": 0.03420211226851852
+        }
+      },
+      "freiburg1_room": {
+        "baseline": {
+          "rmse": 0.7630633571207893,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.05783230251736111
+        },
+        "m1": {
+          "rmse": 0.559156317053794,
+          "delta_vs_baseline": -0.20390704006699534,
+          "coverage": 0.04317165798611111
+        },
+        "m2": {
+          "rmse": 0.7631847767892724,
+          "delta_vs_baseline": 0.0001214196684831137,
+          "coverage": 0.05776665581597223
+        },
+        "m3": {
+          "rmse": 0.563865983937308,
+          "delta_vs_baseline": -0.1991973731834813,
+          "coverage": 0.038562011718750004
+        },
+        "full": {
+          "rmse": 0.5642019108673401,
+          "delta_vs_baseline": -0.19886144625344926,
+          "coverage": 0.03854437934027778
+        }
+      },
+      "freiburg2_xyz": {
+        "baseline": {
+          "rmse": 1.3183510378754244,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.14918646918402775
+        },
+        "m1": {
+          "rmse": 0.9708184214574285,
+          "delta_vs_baseline": -0.34753261641799593,
+          "coverage": 0.07723198784722222
+        },
+        "m2": {
+          "rmse": 1.3186208209033214,
+          "delta_vs_baseline": 0.00026978302789704145,
+          "coverage": 0.14921820746527778
+        },
+        "m3": {
+          "rmse": 0.8201010140276784,
+          "delta_vs_baseline": -0.49825002384774597,
+          "coverage": 0.060769314236111115
+        },
+        "full": {
+          "rmse": 0.8202059301373534,
+          "delta_vs_baseline": -0.49814510773807097,
+          "coverage": 0.060754665798611114
+        }
+      },
+      "freiburg3_long_office_household": {
+        "baseline": {
+          "rmse": 1.1157645182288138,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.21851453993055556
+        },
+        "m1": {
+          "rmse": 0.7257121643141337,
+          "delta_vs_baseline": -0.3900523539146802,
+          "coverage": 0.11488525390625
+        },
+        "m2": {
+          "rmse": 1.1148900883251824,
+          "delta_vs_baseline": -0.0008744299036314018,
+          "coverage": 0.21853678385416664
+        },
+        "m3": {
+          "rmse": 0.7257121643141337,
+          "delta_vs_baseline": -0.3900523539146802,
+          "coverage": 0.11488525390625
+        },
+        "full": {
+          "rmse": 0.7256042227515258,
+          "delta_vs_baseline": -0.39016029547728803,
+          "coverage": 0.11492458767361112
+        }
+      }
+    },
+    "severe": {
+      "freiburg1_desk": {
+        "baseline": {
+          "rmse": 0.7705733444393102,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.07268839518229167
+        },
+        "m1": {
+          "rmse": 0.4792804280402717,
+          "delta_vs_baseline": -0.29129291639903854,
+          "coverage": 0.05895222981770833
+        },
+        "m2": {
+          "rmse": 0.7701519264972292,
+          "delta_vs_baseline": -0.0004214179420810593,
+          "coverage": 0.07271280924479166
+        },
+        "m3": {
+          "rmse": 0.4644159182934564,
+          "delta_vs_baseline": -0.30615742614585384,
+          "coverage": 0.05395589192708333
+        },
+        "full": {
+          "rmse": 0.46463485464518783,
+          "delta_vs_baseline": -0.3059384897941224,
+          "coverage": 0.053995361328125005
+        }
+      },
+      "freiburg1_desk2": {
+        "baseline": {
+          "rmse": 0.6946000879851469,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.05514142071759259
+        },
+        "m1": {
+          "rmse": 0.40468798697814345,
+          "delta_vs_baseline": -0.2899121010070035,
+          "coverage": 0.04304578993055555
+        },
+        "m2": {
+          "rmse": 0.6950205754975943,
+          "delta_vs_baseline": 0.00042048751244738725,
+          "coverage": 0.0551320167824074
+        },
+        "m3": {
+          "rmse": 0.40254025081864525,
+          "delta_vs_baseline": -0.2920598371665017,
+          "coverage": 0.03864366319444445
+        },
+        "full": {
+          "rmse": 0.4022824360696388,
+          "delta_vs_baseline": -0.2923176519155081,
+          "coverage": 0.03861436631944445
+        }
+      },
+      "freiburg1_room": {
+        "baseline": {
+          "rmse": 0.781471974627006,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.06354410807291667
+        },
+        "m1": {
+          "rmse": 0.5855509768528493,
+          "delta_vs_baseline": -0.19592099777415672,
+          "coverage": 0.047897135416666674
+        },
+        "m2": {
+          "rmse": 0.7810950744955463,
+          "delta_vs_baseline": -0.0003769001314597453,
+          "coverage": 0.063505859375
+        },
+        "m3": {
+          "rmse": 0.5933464536771489,
+          "delta_vs_baseline": -0.18812552094985713,
+          "coverage": 0.041882324218749996
+        },
+        "full": {
+          "rmse": 0.5933395860653318,
+          "delta_vs_baseline": -0.18813238856167425,
+          "coverage": 0.041866319444444446
+        }
+      },
+      "freiburg2_xyz": {
+        "baseline": {
+          "rmse": 1.3509440212813306,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.17655137803819443
+        },
+        "m1": {
+          "rmse": 0.9961659484340744,
+          "delta_vs_baseline": -0.35477807284725627,
+          "coverage": 0.10152398003472222
+        },
+        "m2": {
+          "rmse": 1.3513623998672102,
+          "delta_vs_baseline": 0.0004183785858795641,
+          "coverage": 0.176552734375
+        },
+        "m3": {
+          "rmse": 0.8901909992810086,
+          "delta_vs_baseline": -0.460753022000322,
+          "coverage": 0.07571885850694444
+        },
+        "full": {
+          "rmse": 0.890103380389053,
+          "delta_vs_baseline": -0.4608406408922776,
+          "coverage": 0.07571044921875
+        }
+      },
+      "freiburg3_long_office_household": {
+        "baseline": {
+          "rmse": 1.0846021054407455,
+          "delta_vs_baseline": 0.0,
+          "coverage": 0.24336805555555552
+        },
+        "m1": {
+          "rmse": 0.7688792084473229,
+          "delta_vs_baseline": -0.3157228969934226,
+          "coverage": 0.13739013671875
+        },
+        "m2": {
+          "rmse": 1.0847277321293907,
+          "delta_vs_baseline": 0.0001256266886451307,
+          "coverage": 0.24334092881944444
+        },
+        "m3": {
+          "rmse": 0.7688792084473229,
+          "delta_vs_baseline": -0.3157228969934226,
+          "coverage": 0.13739013671875
+        },
+        "full": {
+          "rmse": 0.7696437268802706,
+          "delta_vs_baseline": -0.3149583785604749,
+          "coverage": 0.13741373697916667
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "description": "CUDA sparse TSDF reference baseline; three fixed windows, pixel_stride=8",
+  "cloud_files": [
+    "LOCAL_EXPERIMENT_ROOT/runs/tsdf_baseline_s60_cuda.json",
+    "LOCAL_EXPERIMENT_ROOT/runs/tsdf_baseline_s80_cuda.json",
+    "LOCAL_EXPERIMENT_ROOT/runs/tsdf_baseline_s100_cuda.json"
+  ],
+  "target_scene_rmse": {
+    "fr1/room": [0.5301544559854768, 0.7064401486419861, 0.42856743153994226],
+    "fr2/xyz": [0.8374011279693007, 0.7866808132572647, 0.7712194634338804],
+    "fr3/long-office": [1.0954441972026034, 1.049811516010922, 1.0592456148945755]
+  },
+  "target_scene_mean_popstd": {
+    "fr1/room": [0.5551, 0.1148],
+    "fr2/xyz": [0.7984, 0.0283],
+    "fr3/long-office": [1.0682, 0.0197]
+  },
+  "open3d_target_scene_rmse": {
+    "fr1/room": [0.545899749646871, 0.7969867048883381, 0.4298112838883466],
+    "fr2/xyz": [1.1903638009337516, 1.1170899034787067, 1.0888805152048937],
+    "fr3/long-office": [1.227004711502581, 1.0727303301774525, 1.1519320633774903]
+  },
+  "open3d_target_scene_mean_popstd": {
+    "fr1/room": [0.5909, 0.1532],
+    "fr2/xyz": [1.1321, 0.0428],
+    "fr3/long-office": [1.1506, 0.0630]
+  }
+}
+
